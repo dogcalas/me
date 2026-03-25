@@ -1,2 +1,2 @@
 # Redirect www to non-www (if custom domain)
-# https://www.abrahamcalas.com/* https://abrahamcalas.com/:splat 301
+# https://www.abrahamcalas.dev/* https://abrahamcalas.dev/:splat 301
