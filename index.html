@@ -226,13 +226,13 @@
       display: flex; align-items: center; justify-content: center; gap: 0;
     }
     .hero-status .prompt { color: var(--accent); }
-    .hero-status .typed { color: var(--text-muted); overflow: hidden; white-space: nowrap; width: 0; animation: typing 2s steps(28) 1.5s forwards; }
+    .hero-status .typed { color: var(--text-muted); overflow: hidden; white-space: nowrap; width: 0; animation: typing 2.5s steps(22) 1.5s forwards; }
     .hero-status .caret {
       display: inline-block; width: 2px; height: 1.1em; background: var(--accent);
       margin-left: 2px; animation: blink 1s step-end infinite;
       vertical-align: text-bottom;
     }
-    @keyframes typing { from { width: 0; } to { width: 19ch; } }
+    @keyframes typing { from { width: 0; } to { width: 22ch; } }
     @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
 
     .hero-name {
