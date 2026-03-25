@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://abrahamcalas.com/sitemap.xml
+Sitemap: https://abrahamcalas.dev/sitemap.xml
