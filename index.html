@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YBV6Z6D6QF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YBV6Z6D6QF');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO Primary -->
   <title>Abraham Calas Torres | Software Architect, AI Engineer & Innovation Leader</title>
-  <meta name="description" content="Abraham Calas Torres - Ingeniero de Software, Arquitecto de Sistemas y lider en innovacion con +12 anos de experiencia. Director de Desarrollo en elTOQUE. Especialista en IA, NLP y plataformas escalables. Madrid, Espana.">
-  <meta name="keywords" content="Abraham Calas, Abraham Calas Torres, software architect, AI engineer, CTO, elTOQUE, OMFi, Datalis, NLP, machine learning, full stack developer, Madrid, Cuba, innovation leader, MBA, ingeniero informatico">
+  <meta name="description" content="Abraham Calas Torres - Ingeniero de Software, Arquitecto de Sistemas y líder en innovación con +12 años de experiencia. Director de Desarrollo en elTOQUE. Especialista en IA, NLP y plataformas escalables. Madrid, España.">
+  <meta name="keywords" content="Abraham Calas, Abraham Calas Torres, software architect, AI engineer, CTO, elTOQUE, OMFi, Datalis, NLP, machine learning, full stack developer, Madrid, Cuba, innovation leader, MBA, ingeniero informático">
   <meta name="author" content="Abraham Calas Torres">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://abrahamcalas.com/">
@@ -16,7 +24,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://abrahamcalas.com/">
   <meta property="og:title" content="Abraham Calas Torres | Software Architect & AI Engineer">
-  <meta property="og:description" content="Ingeniero de Software con +12 anos de experiencia construyendo plataformas que impactan a millones. Director de Desarrollo en elTOQUE. Especialista en IA, arquitectura de sistemas y liderazgo tecnico.">
+  <meta property="og:description" content="Ingeniero de Software con +12 años de experiencia construyendo plataformas que impactan a millones. Director de Desarrollo en elTOQUE. Especialista en IA, arquitectura de sistemas y liderazgo técnico.">
   <meta property="og:image" content="https://abrahamcalas.com/img/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -27,7 +35,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://abrahamcalas.com/">
   <meta name="twitter:title" content="Abraham Calas Torres | Software Architect & AI Engineer">
-  <meta name="twitter:description" content="Ingeniero de Software con +12 anos de experiencia construyendo plataformas que impactan a millones. Especialista en IA y arquitectura de sistemas.">
+  <meta name="twitter:description" content="Ingeniero de Software con +12 años de experiencia construyendo plataformas que impactan a millones. Especialista en IA y arquitectura de sistemas.">
   <meta name="twitter:image" content="https://abrahamcalas.com/img/og-image.jpg">
 
   <!-- Geo & Language -->
@@ -53,7 +61,7 @@
     "name": "Abraham Calas Torres",
     "url": "https://abrahamcalas.com",
     "image": "https://abrahamcalas.com/img/og-image.jpg",
-    "jobTitle": "Director de Desarrollo e Innovacion",
+    "jobTitle": "Director de Desarrollo e Innovación",
     "worksFor": {
       "@type": "Organization",
       "name": "elTOQUE",
@@ -62,7 +70,7 @@
     "alumniOf": [
       {
         "@type": "EducationalOrganization",
-        "name": "Universidad de las Ciencias Informaticas (UCI)"
+        "name": "Universidad de las Ciencias Informáticas (UCI)"
       },
       {
         "@type": "EducationalOrganization",
@@ -81,7 +89,7 @@
       "https://github.com/abrahamcalas",
       "https://x.com/dogcalas"
     ],
-    "description": "Ingeniero en Ciencias Informaticas con Titulo de Oro, MBA por ESDEN Business School. Director de Desarrollo e Innovacion con mas de 12 anos de experiencia construyendo plataformas escalables que impactan a millones de personas."
+    "description": "Ingeniero en Ciencias Informáticas con Título de Oro, MBA por ESDEN Business School. Director de Desarrollo e Innovación con más de 12 años de experiencia construyendo plataformas escalables que impactan a millones de personas."
   }
   </script>
 
@@ -209,6 +217,16 @@
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
     .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 4px 20px var(--accent-glow); }
+
+    .lang-toggle {
+      display: flex; align-items: center; gap: 0.3rem;
+      padding: 0.4rem 0.8rem; border-radius: 50px;
+      border: 1px solid var(--border); background: transparent;
+      color: var(--text-muted); font-family: var(--mono); font-size: 0.7rem;
+      cursor: none; transition: all 0.3s ease; letter-spacing: 0.05em;
+    }
+    .lang-toggle:hover { border-color: var(--accent); color: var(--text); }
+    .lang-toggle .lang-active { color: var(--accent); font-weight: 600; }
 
     .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: none; padding: 5px; }
     .hamburger span { width: 24px; height: 2px; background: var(--text); transition: all 0.3s ease; }
@@ -745,13 +763,16 @@
     <div class="nav-inner">
       <a href="#" class="nav-logo magnetic">AC</a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about" class="magnetic">Sobre mi</a></li>
-        <li><a href="#experience" class="magnetic">Experiencia</a></li>
-        <li><a href="#projects" class="magnetic">Proyectos</a></li>
+        <li><a href="#about" class="magnetic" data-i18n="nav_about">Sobre mí</a></li>
+        <li><a href="#experience" class="magnetic" data-i18n="nav_experience">Experiencia</a></li>
+        <li><a href="#projects" class="magnetic" data-i18n="nav_projects">Proyectos</a></li>
         <li><a href="#skills" class="magnetic">Skills</a></li>
-        <li><a href="#awards" class="magnetic">Premios</a></li>
+        <li><a href="#awards" class="magnetic" data-i18n="nav_awards">Premios</a></li>
       </ul>
-      <a href="#contact" class="nav-cta magnetic">Contacto</a>
+      <button class="lang-toggle magnetic" id="langToggle" aria-label="Change language">
+        <span class="lang-active" data-lang="es">ES</span><span style="opacity:0.3">|</span><span data-lang="en">EN</span>
+      </button>
+      <a href="#contact" class="nav-cta magnetic" data-i18n="nav_contact">Contacto</a>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -765,20 +786,20 @@
       <h1 class="hero-name">
         <span class="gradient-text">Abraham</span><br>Calas Torres
       </h1>
-      <p class="hero-title">Director de Desarrollo & Innovacion &middot; AI Engineer &middot; Founder</p>
-      <p class="hero-desc">
-        De La Habana a Madrid. +12 anos construyendo productos digitales, liderando equipos
+      <p class="hero-title" data-i18n="hero_title">Director de Desarrollo & Innovación &middot; AI Engineer &middot; Founder</p>
+      <p class="hero-desc" data-i18n="hero_desc">
+        De La Habana a Madrid. +12 años construyendo productos digitales, liderando equipos
         y transformando datos en plataformas que impactan a millones de personas.
         Obsesionado con la eficiencia, la IA y las soluciones que escalan.
       </p>
       <div class="hero-stats">
-        <div class="hero-stat"><div class="num" data-count="12">0</div><div class="label">Anos de exp.</div></div>
-        <div class="hero-stat"><div class="num" data-count="25">0</div><div class="label">Proyectos</div></div>
-        <div class="hero-stat"><div class="num" data-count="15">0</div><div class="label">Publicaciones</div></div>
-        <div class="hero-stat"><div class="num" data-count="4">0</div><div class="label">Premios</div></div>
+        <div class="hero-stat"><div class="num" data-count="12">0</div><div class="label" data-i18n="stat_years">Años de exp.</div></div>
+        <div class="hero-stat"><div class="num" data-count="25">0</div><div class="label" data-i18n="stat_projects">Proyectos</div></div>
+        <div class="hero-stat"><div class="num" data-count="15">0</div><div class="label" data-i18n="stat_pubs">Publicaciones</div></div>
+        <div class="hero-stat"><div class="num" data-count="4">0</div><div class="label" data-i18n="stat_awards">Premios</div></div>
       </div>
       <div class="scroll-indicator">
-        <span>Scroll</span>
+        <span data-i18n="scroll">Scroll</span>
         <div class="scroll-line"></div>
       </div>
     </div>
@@ -788,27 +809,27 @@
   <section id="about">
     <div class="section-inner">
       <div class="section-header">
-        <div class="section-label">01 &mdash; Sobre mi</div>
-        <h2 class="section-title">Construyendo el futuro<br>con codigo y vision</h2>
+        <div class="section-label" data-i18n="about_label">01 &mdash; Sobre mí</div>
+        <h2 class="section-title" data-i18n="about_title">Construyendo el futuro<br>con código y visión</h2>
       </div>
       <div class="about-grid">
         <div class="about-text reveal">
-          <p>
-            Soy <span class="highlight">Ingeniero en Ciencias Informaticas</span> graduado con Titulo de Oro
-            y <span class="highlight">MBA</span> por ESDEN Business School. No me quedo solo en la teoria:
+          <p data-i18n="about_p1">
+            Soy <span class="highlight">Ingeniero en Ciencias Informáticas</span> graduado con Título de Oro
+            y <span class="highlight">MBA</span> por ESDEN Business School. No me quedo solo en la teoría:
             construyo cosas que funcionan, escalan y generan impacto real.
           </p>
-          <p>
-            Llevo +12 anos creando productos digitales &mdash; desde <span class="highlight">arquitecturas de
+          <p data-i18n="about_p2">
+            Llevo +12 años creando productos digitales &mdash; desde <span class="highlight">arquitecturas de
             microservicios</span> hasta <span class="highlight">agentes de IA con LangGraph</span>. Como
             Director de Desarrollo en <a href="https://eltoque.com" target="_blank" rel="noopener" class="inline-link">elTOQUE</a>,
             convierto datos en herramientas que millones de personas usan
             a diario. Como fundador de <a href="https://datalis.dev" target="_blank" rel="noopener" class="inline-link">Datalis</a>,
-            llevo esa misma energia al mundo del SaaS.
+            llevo esa misma energía al mundo del SaaS.
           </p>
-          <p>
+          <p data-i18n="about_p3">
             Me mueve resolver problemas complejos con soluciones elegantes. Creo en el human-in-the-loop,
-            en la optimizacion obsesiva de costos, y en que la mejor arquitectura es la que no necesitas explicar.
+            en la optimización obsesiva de costos, y en que la mejor arquitectura es la que no necesitas explicar.
           </p>
           <div class="about-what-i-do reveal">
             <p class="about-what-line">
@@ -824,7 +845,7 @@
             </p>
           </div>
           <div class="personal-strip">
-            <div class="personal-item"><span class="pi-icon">&#x1F3CB;</span> <span class="pi-text">Gym rat &mdash; la disciplina del hierro se traslada al codigo</span></div>
+            <div class="personal-item"><span class="pi-icon">&#x1F3CB;</span> <span class="pi-text" data-i18n="about_gym">Gym rat &mdash; la disciplina del hierro se traslada al código</span></div>
           </div>
         </div>
         <div class="reveal" style="display: flex; flex-direction: column; gap: 1.5rem;">
@@ -833,7 +854,7 @@
             <div style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(10,10,15,0.5) 0%, transparent 40%); pointer-events: none;"></div>
             <div style="position: absolute; bottom: 1.5rem; left: 1.5rem; z-index: 2;">
               <div style="font-family: var(--mono); font-size: 0.7rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem;">
-                <span style="display:inline-block; width: 6px; height: 6px; border-radius: 50%; background: #22c55e;"></span> Madrid, Espana
+                <span style="display:inline-block; width: 6px; height: 6px; border-radius: 50%; background: #22c55e;"></span> Madrid, España
               </div>
             </div>
           </div>
@@ -846,57 +867,57 @@
   <section id="experience">
     <div class="section-inner">
       <div class="section-header">
-        <div class="section-label">02 &mdash; Experiencia</div>
-        <h2 class="section-title">Mi trayectoria<br>profesional</h2>
+        <div class="section-label" data-i18n="exp_label">02 &mdash; Experiencia</div>
+        <h2 class="section-title" data-i18n="exp_title">Mi trayectoria<br>profesional</h2>
       </div>
       <div class="timeline">
         <div class="timeline-item">
           <div class="timeline-date">10/2020 &mdash; Presente</div>
-          <div class="timeline-role">Director de Desarrollo e Innovacion</div>
+          <div class="timeline-role" data-i18n="exp_role1">Director de Desarrollo e Innovación</div>
           <div class="timeline-company"><a href="https://eltoque.com/" target="_blank" rel="noopener">elTOQUE</a></div>
-          <p class="timeline-desc">Liderando el desarrollo tecnologico y la innovacion digital de uno de los medios independientes mas influyentes de Cuba. Creacion de plataformas de datos, herramientas interactivas y productos digitales.</p>
+          <p class="timeline-desc" data-i18n="exp_desc1">Liderando el desarrollo tecnológico y la innovación digital de uno de los medios independientes más influyentes de Cuba. Creación de plataformas de datos, herramientas interactivas y productos digitales.</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">07/2022 &mdash; Presente</div>
-          <div class="timeline-role">Fundador y Accionista</div>
+          <div class="timeline-role" data-i18n="exp_role2">Fundador y Accionista</div>
           <div class="timeline-company"><a href="https://datalis.dev" target="_blank" rel="noopener">Datalis S.A.S</a></div>
-          <p class="timeline-desc">Empresa de soluciones tecnologicas enfocada en desarrollo de software, integracion de datos e inteligencia artificial.</p>
+          <p class="timeline-desc" data-i18n="exp_desc2">Empresa de soluciones tecnológicas enfocada en desarrollo de software, integración de datos e inteligencia artificial.</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">01/2025 &mdash; 06/2025</div>
           <div class="timeline-role">Lead AI Developer</div>
           <div class="timeline-company"><a href="https://reco.chat" target="_blank" rel="noopener">Reco AI Solutions SL</a></div>
-          <p class="timeline-desc">Liderando el desarrollo de soluciones de inteligencia artificial conversacional.</p>
+          <p class="timeline-desc" data-i18n="exp_desc3">Liderando el desarrollo de soluciones de inteligencia artificial conversacional.</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">03/2019 &mdash; 07/2022</div>
-          <div class="timeline-role">Especialista Principal</div>
+          <div class="timeline-role" data-i18n="exp_role4">Especialista Principal</div>
           <div class="timeline-company"><a href="https://xoait.com/" target="_blank" rel="noopener">Information Technology XOA SA (Ecuador)</a></div>
-          <p class="timeline-desc">Desarrollo de soluciones empresariales, aplicaciones moviles y chatbots para clientes corporativos en Ecuador.</p>
+          <p class="timeline-desc" data-i18n="exp_desc4">Desarrollo de soluciones empresariales, aplicaciones móviles y chatbots para clientes corporativos en Ecuador.</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">02/2018 &mdash; 03/2019</div>
-          <div class="timeline-role">Administrador de Sistemas</div>
-          <div class="timeline-company"><a href="https://www.uic.cu/" target="_blank" rel="noopener">Union de Informaticos de Cuba</a></div>
-          <p class="timeline-desc">Administracion de la red nacional y despliegue de servicios informaticos para los miembros de la organizacion.</p>
+          <div class="timeline-role" data-i18n="exp_role5">Administrador de Sistemas</div>
+          <div class="timeline-company"><a href="https://www.uic.cu/" target="_blank" rel="noopener">Unión de Informáticos de Cuba</a></div>
+          <p class="timeline-desc" data-i18n="exp_desc5">Administración de la red nacional y despliegue de servicios informáticos para los miembros de la organización.</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">01/2017 &mdash; 02/2018</div>
-          <div class="timeline-role">Jefe de Proyecto</div>
-          <div class="timeline-company"><a href="https://uci.cu" target="_blank" rel="noopener">Universidad de las Ciencias Informaticas</a></div>
-          <p class="timeline-desc">Lider del equipo que desarrollo SIPAC v3, sistema que informatiza la planificacion de actividades en entidades estatales de Cuba.</p>
+          <div class="timeline-role" data-i18n="exp_role6">Jefe de Proyecto</div>
+          <div class="timeline-company"><a href="https://uci.cu" target="_blank" rel="noopener">Universidad de las Ciencias Informáticas</a></div>
+          <p class="timeline-desc" data-i18n="exp_desc6">Líder del equipo que desarrolló SIPAC v3, sistema que informatiza la planificación de actividades en entidades estatales de Cuba.</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">10/2014 &mdash; 12/2016</div>
-          <div class="timeline-role">Arquitecto de Sistemas</div>
-          <div class="timeline-company"><a href="https://uci.cu" target="_blank" rel="noopener">Universidad de las Ciencias Informaticas</a></div>
-          <p class="timeline-desc">Diseno y desarrollo de la arquitectura de referencia para proyectos PHP de la universidad. Premio al Arquitecto de Software mas destacado (2015).</p>
+          <div class="timeline-role" data-i18n="exp_role7">Arquitecto de Sistemas</div>
+          <div class="timeline-company"><a href="https://uci.cu" target="_blank" rel="noopener">Universidad de las Ciencias Informáticas</a></div>
+          <p class="timeline-desc" data-i18n="exp_desc7">Diseño y desarrollo de la arquitectura de referencia para proyectos PHP de la universidad. Premio al Arquitecto de Software más destacado (2015).</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">09/2011 &mdash; 12/2014</div>
-          <div class="timeline-role">Desarrollador Full Stack</div>
-          <div class="timeline-company"><a href="https://uci.cu" target="_blank" rel="noopener">Universidad de las Ciencias Informaticas</a></div>
-          <p class="timeline-desc">Desarrollo de aplicaciones web en el Centro de Informatizacion de la Gestion de Entidades.</p>
+          <div class="timeline-role" data-i18n="exp_role8">Desarrollador Full Stack</div>
+          <div class="timeline-company"><a href="https://uci.cu" target="_blank" rel="noopener">Universidad de las Ciencias Informáticas</a></div>
+          <p class="timeline-desc" data-i18n="exp_desc8">Desarrollo de aplicaciones web en el Centro de Informatización de la Gestión de Entidades.</p>
         </div>
       </div>
     </div>
@@ -906,93 +927,93 @@
   <section id="projects">
     <div class="section-inner">
       <div class="section-header">
-        <div class="section-label">03 &mdash; Proyectos</div>
-        <h2 class="section-title">Proyectos<br>destacados</h2>
+        <div class="section-label" data-i18n="proj_label">03 &mdash; Proyectos</div>
+        <h2 class="section-title" data-i18n="proj_title">Proyectos<br>destacados</h2>
       </div>
       <div class="projects-grid">
         <a href="https://eltoque.com" target="_blank" rel="noopener" class="project-card">
           <div class="glow"></div>
           <img src="img/eltoque.png" alt="elTOQUE" class="project-logo">
           <div class="project-name">elTOQUE</div>
-          <p class="project-desc">Reconocido medio digital de noticias independiente. Plataforma completa con CMS, APIs y multiples productos digitales.</p>
-          <span class="project-link">Visitar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
+          <p class="project-desc" data-i18n="proj_eltoque">Reconocido medio digital de noticias independiente. Plataforma completa con CMS, APIs y múltiples productos digitales.</p>
+          <span class="project-link"><span data-i18n="proj_visit">Visitar</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
         </a>
         <a href="https://omfi.eltoque.com" target="_blank" rel="noopener" class="project-card">
           <div class="glow"></div>
           <img src="img/logo-omfi.png" alt="OMFi" class="project-logo">
           <div class="project-name">OMFi</div>
-          <p class="project-desc">Observatorio de Monedas y Finanzas de Cuba. La fuente mas reconocida sobre el mercado informal de divisas.</p>
-          <span class="project-link">Visitar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
+          <p class="project-desc" data-i18n="proj_omfi">Observatorio de Monedas y Finanzas de Cuba. La fuente más reconocida sobre el mercado informal de divisas.</p>
+          <span class="project-link"><span data-i18n="proj_visit">Visitar</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
         </a>
         <a href="https://eltoquemarkets.com/" target="_blank" rel="noopener" class="project-card">
           <div class="glow"></div>
           <img src="img/eltoquemarkets.com.png" alt="elTOQUE Markets" class="project-logo">
           <div class="project-name">elTOQUE Markets</div>
-          <p class="project-desc">Plataforma de comercio electronico y marketplace digital para el mercado cubano.</p>
-          <span class="project-link">Visitar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
+          <p class="project-desc" data-i18n="proj_markets">Plataforma de comercio electrónico y marketplace digital para el mercado cubano.</p>
+          <span class="project-link"><span data-i18n="proj_visit">Visitar</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
         </a>
         <a href="https://legalis.eltoque.com" target="_blank" rel="noopener" class="project-card">
           <div class="glow"></div>
           <img src="img/legalis-logo.png" alt="Legalis" class="project-logo">
           <div class="project-name">Legalis</div>
-          <p class="project-desc">Plataforma digital para acceso rapido a la legislacion cubana y aclarar dudas legales cotidianas.</p>
-          <span class="project-link">Visitar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
+          <p class="project-desc" data-i18n="proj_legalis">Plataforma digital para acceso rápido a la legislación cubana y aclarar dudas legales cotidianas.</p>
+          <span class="project-link"><span data-i18n="proj_visit">Visitar</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
         </a>
         <a href="https://cubapk.com/" target="_blank" rel="noopener" class="project-card">
           <div class="glow"></div>
           <img src="img/cubapk.png" alt="CubaPK" class="project-logo">
           <div class="project-name">CubaPK</div>
-          <p class="project-desc">Plataforma de distribucion de aplicaciones moviles para el ecosistema cubano.</p>
-          <span class="project-link">Visitar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
+          <p class="project-desc" data-i18n="proj_cubapk">Plataforma de distribución de aplicaciones móviles para el ecosistema cubano.</p>
+          <span class="project-link"><span data-i18n="proj_visit">Visitar</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
         </a>
         <a href="https://ddia.org" target="_blank" rel="noopener" class="project-card">
           <div class="glow"></div>
           <img src="img/ddia-logo-9KFnTmO6.png" alt="DDIA" class="project-logo">
           <div class="project-name">DDIA</div>
-          <p class="project-desc">Plataforma web del Instituto Democracia Digital de las Americas.</p>
-          <span class="project-link">Visitar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
+          <p class="project-desc" data-i18n="proj_ddia">Plataforma web del Instituto Democracia Digital de las Américas.</p>
+          <span class="project-link"><span data-i18n="proj_visit">Visitar</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
         </a>
         <a href="https://taicollaborative.org/" target="_blank" rel="noopener" class="project-card">
           <div class="glow"></div>
           <img src="img/tai-logo-E1QBLt6h.png" alt="TAI Collaborative" class="project-logo">
           <div class="project-name">TAI Collaborative</div>
-          <p class="project-desc">Plataforma web de The Trust, Accountability, and Inclusion Collaborative.</p>
-          <span class="project-link">Visitar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
+          <p class="project-desc" data-i18n="proj_tai">Plataforma web de The Trust, Accountability, and Inclusion Collaborative.</p>
+          <span class="project-link"><span data-i18n="proj_visit">Visitar</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
         </a>
         <a href="https://latravesia.eltoque.com/" target="_blank" rel="noopener" class="project-card">
           <div class="glow"></div>
           <div class="project-emoji">&#x1F30A;</div>
-          <div class="project-name">Migrar: La Travesia</div>
-          <p class="project-desc">Registro de personas fallecidas y desaparecidas en la ruta migratoria entre Cuba y Estados Unidos.</p>
-          <span class="project-link">Visitar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
+          <div class="project-name">Migrar: La Travesía</div>
+          <p class="project-desc" data-i18n="proj_travesia">Registro de personas fallecidas y desaparecidas en la ruta migratoria entre Cuba y Estados Unidos.</p>
+          <span class="project-link"><span data-i18n="proj_visit">Visitar</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
         </a>
         <a href="https://constitucion.eltoque.com/" target="_blank" rel="noopener" class="project-card">
           <div class="glow"></div>
           <div class="project-emoji">&#x1F4DC;</div>
           <div class="project-name">La Cuba que viene</div>
-          <p class="project-desc">Multimedia web interactiva ganadora del Online Journalism Award. Narra el proceso constitucional cubano.</p>
-          <span class="project-link">Visitar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
+          <p class="project-desc" data-i18n="proj_cuba">Multimedia web interactiva ganadora del Online Journalism Award. Narra el proceso constitucional cubano.</p>
+          <span class="project-link"><span data-i18n="proj_visit">Visitar</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
         </a>
         <a href="https://alimentoscuba.eltoque.com/" target="_blank" rel="noopener" class="project-card">
           <div class="glow"></div>
           <div class="project-emoji">&#x1F37D;</div>
           <div class="project-name">El Drama de la Comida</div>
-          <p class="project-desc">Multimedia interactiva ganadora del premio CELAP de periodismo investigativo.</p>
-          <span class="project-link">Visitar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
+          <p class="project-desc" data-i18n="proj_drama">Multimedia interactiva ganadora del premio CELAP de periodismo investigativo.</p>
+          <span class="project-link"><span data-i18n="proj_visit">Visitar</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
         </a>
         <a href="https://familias.eltoque.com/" target="_blank" rel="noopener" class="project-card">
           <div class="glow"></div>
           <div class="project-emoji">&#x1F46A;</div>
-          <div class="project-name">Codigo de Familias</div>
-          <p class="project-desc">Especial interactivo sobre el nuevo codigo de familias de Cuba.</p>
-          <span class="project-link">Visitar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
+          <div class="project-name">Código de Familias</div>
+          <p class="project-desc" data-i18n="proj_familias">Especial interactivo sobre el nuevo código de familias de Cuba.</p>
+          <span class="project-link"><span data-i18n="proj_visit">Visitar</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
         </a>
         <a href="https://reco.chat" target="_blank" rel="noopener" class="project-card">
           <div class="glow"></div>
           <div class="project-emoji">&#x1F4AC;</div>
           <div class="project-name">Chatbots & AI</div>
-          <p class="project-desc">TaxiBot, Viatil, DeFactoBot, y asistentes virtuales. Soluciones conversacionales con IA para distintas industrias.</p>
-          <span class="project-link">Explorar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
+          <p class="project-desc" data-i18n="proj_chatbots">TaxiBot, Viatil, DeFactoBot, y asistentes virtuales. Soluciones conversacionales con IA para distintas industrias.</p>
+          <span class="project-link"><span data-i18n="proj_explore">Explorar</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
         </a>
       </div>
     </div>
@@ -1003,7 +1024,7 @@
     <div class="section-inner">
       <div class="section-header">
         <div class="section-label">04 &mdash; Skills</div>
-        <h2 class="section-title">Stack<br>tecnologico</h2>
+        <h2 class="section-title" data-i18n="skills_title">Stack<br>tecnológico</h2>
       </div>
       <div class="skills-container stagger">
         <div class="skill-group" style="--i:0">
@@ -1014,7 +1035,7 @@
             <span class="skill-tag">Swarm</span>
             <span class="skill-tag">CI/CD</span>
             <span class="skill-tag">GNU/Linux</span>
-            <span class="skill-tag">Redes</span>
+            <span class="skill-tag" data-i18n="skill_redes">Redes</span>
           </div>
         </div>
         <div class="skill-group" style="--i:1">
@@ -1043,7 +1064,7 @@
           <div class="skill-tags">
             <span class="skill-tag">NLP</span>
             <span class="skill-tag">AI Engineering</span>
-            <span class="skill-tag">Visualizacion</span>
+            <span class="skill-tag" data-i18n="skill_viz">Visualización</span>
             <span class="skill-tag">ETL</span>
             <span class="skill-tag">Data Cleaning</span>
           </div>
@@ -1052,7 +1073,7 @@
           <div class="skill-group-title"><span class="icon">&#x1F4D0;</span> Arquitectura</div>
           <div class="skill-tags">
             <span class="skill-tag">System Design</span>
-            <span class="skill-tag">Microservicios</span>
+            <span class="skill-tag" data-i18n="skill_micro">Microservicios</span>
             <span class="skill-tag">APIs REST</span>
             <span class="skill-tag">DB Design</span>
           </div>
@@ -1074,21 +1095,21 @@
   <section id="gallery">
     <div class="section-inner">
       <div class="section-header">
-        <div class="section-label">05 &mdash; En el mundo</div>
-        <h2 class="section-title">Donde he<br>dejado huella</h2>
+        <div class="section-label" data-i18n="gallery_label">05 &mdash; En el mundo</div>
+        <h2 class="section-title" data-i18n="gallery_title">Donde he<br>dejado huella</h2>
       </div>
       <div class="gallery-grid">
         <div class="gallery-item span-2">
-          <img src="img/toledo.jpg" alt="Abraham en tirolina en Toledo, Espana" loading="lazy">
+          <img src="img/toledo.jpg" alt="Abraham en tirolina en Toledo, España" loading="lazy">
           <div class="gallery-caption">
-            <h4>Toledo, Espana</h4>
-            <p>Tirolina sobre el Tajo &mdash; la vida es para vivirla</p>
+            <h4>Toledo, España</h4>
+            <p data-i18n="gal_toledo">Tirolina sobre el Tajo &mdash; la vida es para vivirla</p>
           </div>
         </div>
         <div class="gallery-item">
-          <img src="img/bogota.jpg" alt="Abraham en Bogota, Colombia" loading="lazy">
+          <img src="img/bogota.jpg" alt="Abraham en Bogotá, Colombia" loading="lazy">
           <div class="gallery-caption">
-            <h4>Bogota, Colombia</h4>
+            <h4>Bogotá, Colombia</h4>
             <p>Monserrate</p>
           </div>
         </div>
@@ -1110,21 +1131,21 @@
           <img src="img/santiago.jpg" alt="Abraham en Santiago de Chile" loading="lazy">
           <div class="gallery-caption">
             <h4>Santiago, Chile</h4>
-            <p>Explorando Sudamerica</p>
+            <p data-i18n="gal_santiago">Explorando Sudamérica</p>
           </div>
         </div>
         <div class="gallery-item">
           <img src="img/stockholm.jpg" alt="Abraham en Estocolmo, Suecia" loading="lazy">
           <div class="gallery-caption">
             <h4>Estocolmo, Suecia</h4>
-            <p>Verano nordico</p>
+            <p data-i18n="gal_stockholm">Verano nórdico</p>
           </div>
         </div>
         <div class="gallery-item">
-          <img src="img/avila.jpg" alt="Abraham en Avila, Espana" loading="lazy">
+          <img src="img/avila.jpg" alt="Abraham en Ávila, España" loading="lazy">
           <div class="gallery-caption">
-            <h4>Avila, Espana</h4>
-            <p>Puertas medievales</p>
+            <h4>Ávila, España</h4>
+            <p data-i18n="gal_avila">Puertas medievales</p>
           </div>
         </div>
       </div>
@@ -1135,36 +1156,36 @@
   <section id="beyond">
     <div class="section-inner">
       <div class="section-header">
-        <div class="section-label">06 &mdash; Mas alla del codigo</div>
-        <h2 class="section-title">No todo es<br>software</h2>
+        <div class="section-label" data-i18n="beyond_label">06 &mdash; Más allá del código</div>
+        <h2 class="section-title" data-i18n="beyond_title">No todo es<br>software</h2>
       </div>
       <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;" class="beyond-grid">
         <div class="reveal" style="padding: 2.5rem 2rem; border-radius: 20px; background: linear-gradient(135deg, rgba(34,197,94,0.06), rgba(34,197,94,0.02)); border: 1px solid rgba(34,197,94,0.12); text-align: center;">
           <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#x1F3CB;&#xFE0F;</div>
-          <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;">Gym & Disciplina</h4>
-          <p style="font-size: 0.85rem; color: var(--text-dim); line-height: 1.6;">La misma disciplina que aplico al entrenamiento la traslado al codigo. Consistencia, progresion y no saltarse leg day.</p>
+          <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;" data-i18n="beyond_gym_title">Gym & Disciplina</h4>
+          <p style="font-size: 0.85rem; color: var(--text-dim); line-height: 1.6;" data-i18n="beyond_gym_desc">La misma disciplina que aplico al entrenamiento la traslado al código. Consistencia, progresión y no saltarse leg day.</p>
         </div>
         <div class="reveal" style="padding: 2.5rem 2rem; border-radius: 20px; background: linear-gradient(135deg, rgba(99,102,241,0.06), rgba(99,102,241,0.02)); border: 1px solid rgba(99,102,241,0.12); text-align: center;">
           <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#x2708;&#xFE0F;</div>
-          <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;">Viajero incansable</h4>
-          <p style="font-size: 0.85rem; color: var(--text-dim); line-height: 1.6;">Cuba &rarr; Ecuador &rarr; Espana. Me encanta viajar, conocer culturas y adaptarme. Cada lugar me dio una perspectiva unica.</p>
+          <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;" data-i18n="beyond_travel_title">Viajero incansable</h4>
+          <p style="font-size: 0.85rem; color: var(--text-dim); line-height: 1.6;" data-i18n="beyond_travel_desc">Cuba &rarr; Ecuador &rarr; España. Me encanta viajar, conocer culturas y adaptarme. Cada lugar me dio una perspectiva única.</p>
         </div>
         <div class="reveal" style="padding: 2.5rem 2rem; border-radius: 20px; background: linear-gradient(135deg, rgba(236,72,153,0.06), rgba(236,72,153,0.02)); border: 1px solid rgba(236,72,153,0.12); text-align: center;">
           <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#x1F57A;</div>
-          <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;">Vida social</h4>
-          <p style="font-size: 0.85rem; color: var(--text-dim); line-height: 1.6;">Bailar, divertirme y compartir con amigos. No todo es terminal y pull requests &mdash; tambien hay salsa y buen rato.</p>
+          <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;" data-i18n="beyond_social_title">Vida social</h4>
+          <p style="font-size: 0.85rem; color: var(--text-dim); line-height: 1.6;" data-i18n="beyond_social_desc">Bailar, divertirme y compartir con amigos. No todo es terminal y pull requests &mdash; también hay salsa y buen rato.</p>
         </div>
       </div>
       <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 1.5rem;">
         <div class="reveal" style="padding: 2.5rem 2rem; border-radius: 20px; background: linear-gradient(135deg, rgba(251,191,36,0.06), rgba(251,191,36,0.02)); border: 1px solid rgba(251,191,36,0.12); text-align: center;">
           <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#x1F393;</div>
-          <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;">Educador</h4>
-          <p style="font-size: 0.85rem; color: var(--text-dim); line-height: 1.6;">Me apasiona dar clases y compartir conocimiento. Profesor universitario, tutor de tesis y trainer de medios digitales.</p>
+          <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;" data-i18n="beyond_edu_title">Educador</h4>
+          <p style="font-size: 0.85rem; color: var(--text-dim); line-height: 1.6;" data-i18n="beyond_edu_desc">Me apasiona dar clases y compartir conocimiento. Profesor universitario, tutor de tesis y trainer de medios digitales.</p>
         </div>
         <div class="reveal" style="padding: 2.5rem 2rem; border-radius: 20px; background: linear-gradient(135deg, rgba(139,92,246,0.06), rgba(139,92,246,0.02)); border: 1px solid rgba(139,92,246,0.12); text-align: center;">
           <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#x1F9E0;</div>
           <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;">Builder Mindset</h4>
-          <p style="font-size: 0.85rem; color: var(--text-dim); line-height: 1.6;">Fundador, investigador, creador. Si veo un problema, construyo la solucion. Siempre shipping.</p>
+          <p style="font-size: 0.85rem; color: var(--text-dim); line-height: 1.6;" data-i18n="beyond_builder_desc">Fundador, investigador, creador. Si veo un problema, construyo la solución. Siempre shipping.</p>
         </div>
       </div>
     </div>
@@ -1173,36 +1194,36 @@
   <section id="awards">
     <div class="section-inner">
       <div class="section-header">
-        <div class="section-label">07 &mdash; Reconocimientos</div>
-        <h2 class="section-title">Premios y<br>logros destacados</h2>
+        <div class="section-label" data-i18n="awards_label">07 &mdash; Reconocimientos</div>
+        <h2 class="section-title" data-i18n="awards_title">Premios y<br>logros destacados</h2>
       </div>
       <div class="awards-list">
         <div class="award-item">
           <div class="award-icon">&#x1F3C6;</div>
           <div class="award-content">
             <h4>Online Journalism Award</h4>
-            <p>Categoria "Informes explicativos, pequena sala de redaccion" por el especial <a href="https://awards.journalists.org/entries/la-cuba-que-viene/" target="_blank" rel="noopener">La Cuba que viene</a>.</p>
+            <p data-i18n="award_oja_desc">Categoría "Informes explicativos, pequeña sala de redacción" por el especial <a href="https://awards.journalists.org/entries/la-cuba-que-viene/" target="_blank" rel="noopener">La Cuba que viene</a>.</p>
           </div>
         </div>
         <div class="award-item">
           <div class="award-icon">&#x1F3C5;</div>
           <div class="award-content">
-            <h4>Premio CELAP de Periodismo Investigativo</h4>
-            <p>Primer lugar del Centro Latinoamericano de Periodismo por el especial "El Drama de la Comida en Cuba".</p>
+            <h4 data-i18n="award_celap_title">Premio CELAP de Periodismo Investigativo</h4>
+            <p data-i18n="award_celap_desc">Primer lugar del Centro Latinoamericano de Periodismo por el especial "El Drama de la Comida en Cuba".</p>
           </div>
         </div>
         <div class="award-item">
           <div class="award-icon">&#x2B50;</div>
           <div class="award-content">
-            <h4>Arquitecto de Software mas Destacado</h4>
-            <p>Premio del Rector de la Universidad de las Ciencias Informaticas en el ano 2015.</p>
+            <h4 data-i18n="award_arch_title">Arquitecto de Software más Destacado</h4>
+            <p data-i18n="award_arch_desc">Premio del Rector de la Universidad de las Ciencias Informáticas en el año 2015.</p>
           </div>
         </div>
         <div class="award-item">
           <div class="award-icon">&#x1F396;</div>
           <div class="award-content">
-            <h4>Titulo de Oro</h4>
-            <p>Graduacion con honores en Ingenieria en Ciencias Informaticas, Universidad de las Ciencias Informaticas, 2014.</p>
+            <h4 data-i18n="award_gold_title">Título de Oro</h4>
+            <p data-i18n="award_gold_desc">Graduación con honores en Ingeniería en Ciencias Informáticas, Universidad de las Ciencias Informáticas, 2014.</p>
           </div>
         </div>
       </div>
@@ -1213,19 +1234,19 @@
   <section id="education">
     <div class="section-inner">
       <div class="section-header">
-        <div class="section-label">07 &mdash; Formacion</div>
-        <h2 class="section-title">Educacion<br>academica</h2>
+        <div class="section-label" data-i18n="edu_label">07 &mdash; Formación</div>
+        <h2 class="section-title" data-i18n="edu_title">Educación<br>académica</h2>
       </div>
       <div class="edu-grid">
         <div class="edu-card">
           <div class="edu-degree">MBA - Business Administration</div>
           <div class="edu-school">ESDEN Business School</div>
-          <div class="edu-meta"><span>Madrid, Espana</span><span>2025</span></div>
+          <div class="edu-meta"><span>Madrid, España</span><span>2025</span></div>
         </div>
         <div class="edu-card">
-          <div class="edu-degree">Ing. Ciencias Informaticas</div>
-          <div class="edu-school">Universidad de las Ciencias Informaticas (UCI)</div>
-          <div class="edu-meta"><span>La Habana, Cuba</span><span>2014 &middot; Titulo de Oro</span></div>
+          <div class="edu-degree" data-i18n="edu_degree2">Ing. Ciencias Informáticas</div>
+          <div class="edu-school">Universidad de las Ciencias Informáticas (UCI)</div>
+          <div class="edu-meta"><span>La Habana, Cuba</span><span>2014 &middot; <span data-i18n="edu_gold">Título de Oro</span></span></div>
         </div>
       </div>
     </div>
@@ -1235,97 +1256,97 @@
   <section id="publications">
     <div class="section-inner">
       <div class="section-header">
-        <div class="section-label">08 &mdash; Publicaciones</div>
-        <h2 class="section-title">Investigacion<br>y publicaciones</h2>
+        <div class="section-label" data-i18n="pub_label">08 &mdash; Publicaciones</div>
+        <h2 class="section-title" data-i18n="pub_title">Investigación<br>y publicaciones</h2>
       </div>
-      <p style="color: var(--text-dim); margin-bottom: 2rem; font-size: 0.9rem;">+15 publicaciones cientificas &middot; Articulos en <a href="https://eltoque.com/author/abraham-calas" target="_blank" rel="noopener" style="color:var(--accent);">elTOQUE</a> &middot; <a href="https://doi.org/10.1080/00036846.2024.2416091" target="_blank" rel="noopener" style="color:var(--accent);">Applied Economics (2024)</a></p>
+      <p style="color: var(--text-dim); margin-bottom: 2rem; font-size: 0.9rem;" data-i18n="pub_intro">+15 publicaciones científicas &middot; Artículos en <a href="https://eltoque.com/author/abraham-calas" target="_blank" rel="noopener" style="color:var(--accent);">elTOQUE</a> &middot; <a href="https://doi.org/10.1080/00036846.2024.2416091" target="_blank" rel="noopener" style="color:var(--accent);">Applied Economics (2024)</a></p>
       <div class="pub-slider-wrap">
         <div class="pub-slider-track">
           <div class="pub-slider" id="pubSlider">
             <a href="https://doi.org/10.1080/00036846.2024.2416091" target="_blank" rel="noopener" class="pub-card">
               <h4>Using AI in the informal currency market: evidence from Cuba</h4>
               <p class="pub-meta">Applied Economics, 2024</p>
-              <span class="pub-link-icon">Leer &rarr;</span>
+              <span class="pub-link-icon"><span data-i18n="pub_read">Leer &rarr;</span></span>
             </a>
             <a href="http://ecociencia.ecotec.edu.ec/articulo.php?ida=29" target="_blank" rel="noopener" class="pub-card">
-              <h4>Extension del estandar SAML para escenarios SSO</h4>
+              <h4>Extensión del estándar SAML para escenarios SSO</h4>
               <p class="pub-meta">Revista ECOCIENCIA, ISSN 1390-9320</p>
-              <span class="pub-link-icon">Leer &rarr;</span>
+              <span class="pub-link-icon"><span data-i18n="pub_read">Leer &rarr;</span></span>
             </a>
             <a href="http://www.informaticahabana.cu/sites/default/files/ponencias2018/CAL34.pdf" target="_blank" rel="noopener" class="pub-card">
-              <h4>Calidad de los datos en el analisis de procesos</h4>
+              <h4>Calidad de los datos en el análisis de procesos</h4>
               <p class="pub-meta">VIII Taller Int. de Calidad en TIC, 2018</p>
-              <span class="pub-link-icon">Leer &rarr;</span>
+              <span class="pub-link-icon"><span data-i18n="pub_read">Leer &rarr;</span></span>
             </a>
             <a href="http://publicaciones.uci.cu/index.php/SC/article/view/1019" target="_blank" rel="noopener" class="pub-card">
               <h4>Modelo de componentes para el marco de trabajo Sauxe</h4>
-              <p class="pub-meta">Serie Cientifica UCI, ISSN 2306-2495</p>
-              <span class="pub-link-icon">Leer &rarr;</span>
+              <p class="pub-meta">Serie Científica UCI, ISSN 2306-2495</p>
+              <span class="pub-link-icon"><span data-i18n="pub_read">Leer &rarr;</span></span>
             </a>
             <div class="pub-card">
               <h4>Arquitectura de referencia para PHP</h4>
-              <p class="pub-meta">Pena Tecnologica, ISBN 978-959-286-030-8</p>
+              <p class="pub-meta">Peña Tecnológica, ISBN 978-959-286-030-8</p>
             </div>
             <div class="pub-card">
-              <h4>Gestion de datos para mineria de procesos</h4>
+              <h4>Gestión de datos para minería de procesos</h4>
               <p class="pub-meta">ISBN 978-959-16-3272-2, 2017</p>
             </div>
             <div class="pub-card">
-              <h4>Componente de generacion dinamica de servicios REST</h4>
-              <p class="pub-meta">Pena Tecnologica, 2015</p>
+              <h4>Componente de generación dinámica de servicios REST</h4>
+              <p class="pub-meta">Peña Tecnológica, 2015</p>
             </div>
             <a href="http://edacunob.ult.edu.cu/" target="_blank" rel="noopener" class="pub-card">
-              <h4>Sociocibernetica, cibercultura y complejidad</h4>
+              <h4>Sociocibernética, cibercultura y complejidad</h4>
               <p class="pub-meta">EDACUNOB, ISSN 978-959-7225-27</p>
-              <span class="pub-link-icon">Leer &rarr;</span>
+              <span class="pub-link-icon"><span data-i18n="pub_read">Leer &rarr;</span></span>
             </a>
             <a href="https://eltoque.com/author/abraham-calas" target="_blank" rel="noopener" class="pub-card">
-              <h4>Articulos en elTOQUE</h4>
-              <p class="pub-meta">Publicaciones en el medio digital</p>
-              <span class="pub-link-icon">Ver todos &rarr;</span>
+              <h4 data-i18n="pub_articles">Artículos en elTOQUE</h4>
+              <p class="pub-meta" data-i18n="pub_articles_meta">Publicaciones en el medio digital</p>
+              <span class="pub-link-icon"><span data-i18n="pub_all">Ver todos &rarr;</span></span>
             </a>
             <!-- Duplicados para loop infinito -->
             <a href="https://doi.org/10.1080/00036846.2024.2416091" target="_blank" rel="noopener" class="pub-card">
               <h4>Using AI in the informal currency market: evidence from Cuba</h4>
               <p class="pub-meta">Applied Economics, 2024</p>
-              <span class="pub-link-icon">Leer &rarr;</span>
+              <span class="pub-link-icon"><span data-i18n="pub_read">Leer &rarr;</span></span>
             </a>
             <a href="http://ecociencia.ecotec.edu.ec/articulo.php?ida=29" target="_blank" rel="noopener" class="pub-card">
-              <h4>Extension del estandar SAML para escenarios SSO</h4>
+              <h4>Extensión del estándar SAML para escenarios SSO</h4>
               <p class="pub-meta">Revista ECOCIENCIA, ISSN 1390-9320</p>
-              <span class="pub-link-icon">Leer &rarr;</span>
+              <span class="pub-link-icon"><span data-i18n="pub_read">Leer &rarr;</span></span>
             </a>
             <a href="http://www.informaticahabana.cu/sites/default/files/ponencias2018/CAL34.pdf" target="_blank" rel="noopener" class="pub-card">
-              <h4>Calidad de los datos en el analisis de procesos</h4>
+              <h4>Calidad de los datos en el análisis de procesos</h4>
               <p class="pub-meta">VIII Taller Int. de Calidad en TIC, 2018</p>
-              <span class="pub-link-icon">Leer &rarr;</span>
+              <span class="pub-link-icon"><span data-i18n="pub_read">Leer &rarr;</span></span>
             </a>
             <a href="http://publicaciones.uci.cu/index.php/SC/article/view/1019" target="_blank" rel="noopener" class="pub-card">
               <h4>Modelo de componentes para el marco de trabajo Sauxe</h4>
-              <p class="pub-meta">Serie Cientifica UCI, ISSN 2306-2495</p>
-              <span class="pub-link-icon">Leer &rarr;</span>
+              <p class="pub-meta">Serie Científica UCI, ISSN 2306-2495</p>
+              <span class="pub-link-icon"><span data-i18n="pub_read">Leer &rarr;</span></span>
             </a>
             <div class="pub-card">
               <h4>Arquitectura de referencia para PHP</h4>
-              <p class="pub-meta">Pena Tecnologica, ISBN 978-959-286-030-8</p>
+              <p class="pub-meta">Peña Tecnológica, ISBN 978-959-286-030-8</p>
             </div>
             <div class="pub-card">
-              <h4>Gestion de datos para mineria de procesos</h4>
+              <h4>Gestión de datos para minería de procesos</h4>
               <p class="pub-meta">ISBN 978-959-16-3272-2, 2017</p>
             </div>
             <div class="pub-card">
-              <h4>Componente de generacion dinamica de servicios REST</h4>
-              <p class="pub-meta">Pena Tecnologica, 2015</p>
+              <h4>Componente de generación dinámica de servicios REST</h4>
+              <p class="pub-meta">Peña Tecnológica, 2015</p>
             </div>
             <a href="http://edacunob.ult.edu.cu/" target="_blank" rel="noopener" class="pub-card">
-              <h4>Sociocibernetica, cibercultura y complejidad</h4>
+              <h4>Sociocibernética, cibercultura y complejidad</h4>
               <p class="pub-meta">EDACUNOB, ISSN 978-959-7225-27</p>
-              <span class="pub-link-icon">Leer &rarr;</span>
+              <span class="pub-link-icon"><span data-i18n="pub_read">Leer &rarr;</span></span>
             </a>
             <a href="https://eltoque.com/author/abraham-calas" target="_blank" rel="noopener" class="pub-card">
-              <h4>Articulos en elTOQUE</h4>
-              <p class="pub-meta">Publicaciones en el medio digital</p>
-              <span class="pub-link-icon">Ver todos &rarr;</span>
+              <h4 data-i18n="pub_articles">Artículos en elTOQUE</h4>
+              <p class="pub-meta" data-i18n="pub_articles_meta">Publicaciones en el medio digital</p>
+              <span class="pub-link-icon"><span data-i18n="pub_all">Ver todos &rarr;</span></span>
             </a>
           </div>
         </div>
@@ -1338,8 +1359,8 @@
 
   <!-- Contact -->
   <section class="contact-section" id="contact">
-    <h2 class="contact-title section-header">Hablemos</h2>
-    <p class="contact-sub">Estoy abierto a nuevas oportunidades, colaboraciones y proyectos interesantes.</p>
+    <h2 class="contact-title section-header" data-i18n="contact_title">Hablemos</h2>
+    <p class="contact-sub" data-i18n="contact_sub">Estoy abierto a nuevas oportunidades, colaboraciones y proyectos interesantes.</p>
     <div class="contact-links">
       <a href="mailto:acalas@datalis.dev" class="contact-link primary magnetic">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -1353,9 +1374,9 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-7-8.5L19.5 4h-2L12.2 10 8 4H4zm2.5 1.5h2L17.5 18.5h-2L6.5 5.5z"/></svg>
         @dogcalas
       </a>
-      <a href="tel:+34614128073" class="contact-link magnetic">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        +34 614 128 073
+      <a href="https://wa.me/593994339395" target="_blank" rel="noopener" class="contact-link magnetic">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        WhatsApp
       </a>
     </div>
   </section>
@@ -1603,6 +1624,155 @@
       track.addEventListener('click', (e) => {
         if (Math.abs(e.pageX - startX) > 5) e.preventDefault();
       }, true);
+    })();
+
+    // ========== I18N LANGUAGE TOGGLE ==========
+    (() => {
+      const translations = {
+        // Nav
+        nav_about: { es: 'Sobre mí', en: 'About me' },
+        nav_experience: { es: 'Experiencia', en: 'Experience' },
+        nav_projects: { es: 'Proyectos', en: 'Projects' },
+        nav_skills: { es: 'Skills', en: 'Skills' },
+        nav_awards: { es: 'Premios', en: 'Awards' },
+        nav_contact: { es: 'Contacto', en: 'Contact' },
+        // Hero
+        hero_title: { es: 'Director de Desarrollo & Innovación &middot; AI Engineer &middot; Founder', en: 'Development & Innovation Director &middot; AI Engineer &middot; Founder' },
+        hero_desc: { es: 'De La Habana a Madrid. +12 años construyendo productos digitales, liderando equipos y transformando datos en plataformas que impactan a millones de personas. Obsesionado con la eficiencia, la IA y las soluciones que escalan.', en: 'From Havana to Madrid. +12 years building digital products, leading teams and transforming data into platforms that impact millions. Obsessed with efficiency, AI and scalable solutions.' },
+        stat_years: { es: 'Años de exp.', en: 'Years of exp.' },
+        stat_projects: { es: 'Proyectos', en: 'Projects' },
+        stat_pubs: { es: 'Publicaciones', en: 'Publications' },
+        stat_awards: { es: 'Premios', en: 'Awards' },
+        scroll: { es: 'Scroll', en: 'Scroll' },
+        // About
+        about_label: { es: '01 &mdash; Sobre mí', en: '01 &mdash; About me' },
+        about_title: { es: 'Construyendo el futuro<br>con código y visión', en: 'Building the future<br>with code and vision' },
+        about_p1: { es: 'Soy <span class="highlight">Ingeniero en Ciencias Informáticas</span> graduado con Título de Oro y <span class="highlight">MBA</span> por ESDEN Business School. No me quedo solo en la teoría: construyo cosas que funcionan, escalan y generan impacto real.', en: 'I am a <span class="highlight">Computer Science Engineer</span> graduated with Gold Title honors and an <span class="highlight">MBA</span> from ESDEN Business School. I don\'t just stay in theory: I build things that work, scale and generate real impact.' },
+        about_p2: { es: 'Llevo +12 años creando productos digitales &mdash; desde <span class="highlight">arquitecturas de microservicios</span> hasta <span class="highlight">agentes de IA con LangGraph</span>. Como Director de Desarrollo en <a href="https://eltoque.com" target="_blank" rel="noopener" class="inline-link">elTOQUE</a>, convierto datos en herramientas que millones de personas usan a diario. Como fundador de <a href="https://datalis.dev" target="_blank" rel="noopener" class="inline-link">Datalis</a>, llevo esa misma energía al mundo del SaaS.', en: 'I have +12 years creating digital products &mdash; from <span class="highlight">microservice architectures</span> to <span class="highlight">AI agents with LangGraph</span>. As Development Director at <a href="https://eltoque.com" target="_blank" rel="noopener" class="inline-link">elTOQUE</a>, I turn data into tools that millions use daily. As founder of <a href="https://datalis.dev" target="_blank" rel="noopener" class="inline-link">Datalis</a>, I bring that same energy to the SaaS world.' },
+        about_p3: { es: 'Me mueve resolver problemas complejos con soluciones elegantes. Creo en el human-in-the-loop, en la optimización obsesiva de costos, y en que la mejor arquitectura es la que no necesitas explicar.', en: 'I\'m driven by solving complex problems with elegant solutions. I believe in human-in-the-loop, obsessive cost optimization, and that the best architecture is the one you don\'t need to explain.' },
+        about_gym: { es: 'Gym rat &mdash; la disciplina del hierro se traslada al código', en: 'Gym rat &mdash; iron discipline translates to code' },
+        // Experience
+        exp_label: { es: '02 &mdash; Experiencia', en: '02 &mdash; Experience' },
+        exp_title: { es: 'Mi trayectoria<br>profesional', en: 'My professional<br>journey' },
+        exp_role1: { es: 'Director de Desarrollo e Innovación', en: 'Development & Innovation Director' },
+        exp_desc1: { es: 'Liderando el desarrollo tecnológico y la innovación digital de uno de los medios independientes más influyentes de Cuba. Creación de plataformas de datos, herramientas interactivas y productos digitales.', en: 'Leading the technological development and digital innovation of one of Cuba\'s most influential independent media outlets. Creating data platforms, interactive tools and digital products.' },
+        exp_role2: { es: 'Fundador y Accionista', en: 'Founder & Shareholder' },
+        exp_desc2: { es: 'Empresa de soluciones tecnológicas enfocada en desarrollo de software, integración de datos e inteligencia artificial.', en: 'Technology solutions company focused on software development, data integration and artificial intelligence.' },
+        exp_desc3: { es: 'Liderando el desarrollo de soluciones de inteligencia artificial conversacional.', en: 'Leading the development of conversational artificial intelligence solutions.' },
+        exp_role4: { es: 'Especialista Principal', en: 'Senior Specialist' },
+        exp_desc4: { es: 'Desarrollo de soluciones empresariales, aplicaciones móviles y chatbots para clientes corporativos en Ecuador.', en: 'Development of enterprise solutions, mobile applications and chatbots for corporate clients in Ecuador.' },
+        exp_role5: { es: 'Administrador de Sistemas', en: 'System Administrator' },
+        exp_desc5: { es: 'Administración de la red nacional y despliegue de servicios informáticos para los miembros de la organización.', en: 'Administration of the national network and deployment of IT services for organization members.' },
+        exp_role6: { es: 'Jefe de Proyecto', en: 'Project Manager' },
+        exp_desc6: { es: 'Líder del equipo que desarrolló SIPAC v3, sistema que informatiza la planificación de actividades en entidades estatales de Cuba.', en: 'Leader of the team that developed SIPAC v3, a system that digitizes activity planning in Cuban state entities.' },
+        exp_role7: { es: 'Arquitecto de Sistemas', en: 'Systems Architect' },
+        exp_desc7: { es: 'Diseño y desarrollo de la arquitectura de referencia para proyectos PHP de la universidad. Premio al Arquitecto de Software más destacado (2015).', en: 'Design and development of the reference architecture for PHP projects at the university. Award for Most Outstanding Software Architect (2015).' },
+        exp_role8: { es: 'Desarrollador Full Stack', en: 'Full Stack Developer' },
+        exp_desc8: { es: 'Desarrollo de aplicaciones web en el Centro de Informatización de la Gestión de Entidades.', en: 'Web application development at the Entity Management Digitization Center.' },
+        // Projects
+        proj_label: { es: '03 &mdash; Proyectos', en: '03 &mdash; Projects' },
+        proj_title: { es: 'Proyectos<br>destacados', en: 'Featured<br>projects' },
+        proj_eltoque: { es: 'Reconocido medio digital de noticias independiente. Plataforma completa con CMS, APIs y múltiples productos digitales.', en: 'Renowned independent digital news outlet. Complete platform with CMS, APIs and multiple digital products.' },
+        proj_omfi: { es: 'Observatorio de Monedas y Finanzas de Cuba. La fuente más reconocida sobre el mercado informal de divisas.', en: 'Cuba\'s Currency and Finance Observatory. The most recognized source on the informal currency market.' },
+        proj_markets: { es: 'Plataforma de comercio electrónico y marketplace digital para el mercado cubano.', en: 'E-commerce platform and digital marketplace for the Cuban market.' },
+        proj_legalis: { es: 'Plataforma digital para acceso rápido a la legislación cubana y aclarar dudas legales cotidianas.', en: 'Digital platform for quick access to Cuban legislation and everyday legal questions.' },
+        proj_cubapk: { es: 'Plataforma de distribución de aplicaciones móviles para el ecosistema cubano.', en: 'Mobile application distribution platform for the Cuban ecosystem.' },
+        proj_ddia: { es: 'Plataforma web del Instituto Democracia Digital de las Américas.', en: 'Web platform for the Digital Democracy Institute of the Americas.' },
+        proj_tai: { es: 'Plataforma web de The Trust, Accountability, and Inclusion Collaborative.', en: 'Web platform for The Trust, Accountability, and Inclusion Collaborative.' },
+        proj_travesia: { es: 'Registro de personas fallecidas y desaparecidas en la ruta migratoria entre Cuba y Estados Unidos.', en: 'Registry of deceased and missing persons on the migration route between Cuba and the United States.' },
+        proj_cuba: { es: 'Multimedia web interactiva ganadora del Online Journalism Award. Narra el proceso constitucional cubano.', en: 'Interactive web multimedia, Online Journalism Award winner. Chronicles Cuba\'s constitutional process.' },
+        proj_drama: { es: 'Multimedia interactiva ganadora del premio CELAP de periodismo investigativo.', en: 'Interactive multimedia winner of the CELAP investigative journalism award.' },
+        proj_familias: { es: 'Especial interactivo sobre el nuevo código de familias de Cuba.', en: 'Interactive special on Cuba\'s new family code.' },
+        proj_chatbots: { es: 'TaxiBot, Viatil, DeFactoBot, y asistentes virtuales. Soluciones conversacionales con IA para distintas industrias.', en: 'TaxiBot, Viatil, DeFactoBot, and virtual assistants. Conversational AI solutions for different industries.' },
+        proj_visit: { es: 'Visitar', en: 'Visit' },
+        proj_explore: { es: 'Explorar', en: 'Explore' },
+        // Skills
+        skills_title: { es: 'Stack<br>tecnológico', en: 'Tech<br>stack' },
+        skill_redes: { es: 'Redes', en: 'Networking' },
+        skill_viz: { es: 'Visualización', en: 'Visualization' },
+        skill_micro: { es: 'Microservicios', en: 'Microservices' },
+        // Gallery
+        gallery_label: { es: '05 &mdash; En el mundo', en: '05 &mdash; Around the world' },
+        gallery_title: { es: 'Donde he<br>dejado huella', en: 'Where I\'ve<br>left my mark' },
+        gal_toledo: { es: 'Tirolina sobre el Tajo &mdash; la vida es para vivirla', en: 'Zipline over the Tagus &mdash; life is for living' },
+        gal_santiago: { es: 'Explorando Sudamérica', en: 'Exploring South America' },
+        gal_stockholm: { es: 'Verano nórdico', en: 'Nordic summer' },
+        gal_avila: { es: 'Puertas medievales', en: 'Medieval gates' },
+        // Beyond
+        beyond_label: { es: '06 &mdash; Más allá del código', en: '06 &mdash; Beyond code' },
+        beyond_title: { es: 'No todo es<br>software', en: 'Not everything<br>is software' },
+        beyond_gym_title: { es: 'Gym & Disciplina', en: 'Gym & Discipline' },
+        beyond_gym_desc: { es: 'La misma disciplina que aplico al entrenamiento la traslado al código. Consistencia, progresión y no saltarse leg day.', en: 'The same discipline I apply to training translates to code. Consistency, progression and never skip leg day.' },
+        beyond_travel_title: { es: 'Viajero incansable', en: 'Tireless traveler' },
+        beyond_travel_desc: { es: 'Cuba &rarr; Ecuador &rarr; España. Me encanta viajar, conocer culturas y adaptarme. Cada lugar me dio una perspectiva única.', en: 'Cuba &rarr; Ecuador &rarr; Spain. I love traveling, learning about cultures and adapting. Each place gave me a unique perspective.' },
+        beyond_social_title: { es: 'Vida social', en: 'Social life' },
+        beyond_social_desc: { es: 'Bailar, divertirme y compartir con amigos. No todo es terminal y pull requests &mdash; también hay salsa y buen rato.', en: 'Dancing, having fun and sharing with friends. Not everything is terminal and pull requests &mdash; there\'s also salsa and good times.' },
+        beyond_edu_title: { es: 'Educador', en: 'Educator' },
+        beyond_edu_desc: { es: 'Me apasiona dar clases y compartir conocimiento. Profesor universitario, tutor de tesis y trainer de medios digitales.', en: 'I\'m passionate about teaching and sharing knowledge. University professor, thesis tutor and digital media trainer.' },
+        beyond_builder_desc: { es: 'Fundador, investigador, creador. Si veo un problema, construyo la solución. Siempre shipping.', en: 'Founder, researcher, creator. If I see a problem, I build the solution. Always shipping.' },
+        // Awards
+        awards_label: { es: '07 &mdash; Reconocimientos', en: '07 &mdash; Recognition' },
+        awards_title: { es: 'Premios y<br>logros destacados', en: 'Awards and<br>notable achievements' },
+        award_oja_desc: { es: 'Categoría "Informes explicativos, pequeña sala de redacción" por el especial <a href="https://awards.journalists.org/entries/la-cuba-que-viene/" target="_blank" rel="noopener">La Cuba que viene</a>.', en: 'Category "Explanatory Reporting, Small Newsroom" for the special <a href="https://awards.journalists.org/entries/la-cuba-que-viene/" target="_blank" rel="noopener">La Cuba que viene</a>.' },
+        award_celap_title: { es: 'Premio CELAP de Periodismo Investigativo', en: 'CELAP Investigative Journalism Award' },
+        award_celap_desc: { es: 'Primer lugar del Centro Latinoamericano de Periodismo por el especial "El Drama de la Comida en Cuba".', en: 'First place from the Latin American Center for Journalism for the special "El Drama de la Comida en Cuba".' },
+        award_arch_title: { es: 'Arquitecto de Software más Destacado', en: 'Most Outstanding Software Architect' },
+        award_arch_desc: { es: 'Premio del Rector de la Universidad de las Ciencias Informáticas en el año 2015.', en: 'Award from the Rector of the University of Informatics Sciences in 2015.' },
+        award_gold_title: { es: 'Título de Oro', en: 'Gold Title (Summa Cum Laude)' },
+        award_gold_desc: { es: 'Graduación con honores en Ingeniería en Ciencias Informáticas, Universidad de las Ciencias Informáticas, 2014.', en: 'Graduation with honors in Computer Science Engineering, University of Informatics Sciences, 2014.' },
+        // Education
+        edu_label: { es: '07 &mdash; Formación', en: '07 &mdash; Education' },
+        edu_title: { es: 'Educación<br>académica', en: 'Academic<br>education' },
+        edu_degree2: { es: 'Ing. Ciencias Informáticas', en: 'B.Sc. Computer Science Engineering' },
+        edu_gold: { es: 'Título de Oro', en: 'Gold Title (Summa Cum Laude)' },
+        // Publications
+        pub_label: { es: '08 &mdash; Publicaciones', en: '08 &mdash; Publications' },
+        pub_title: { es: 'Investigación<br>y publicaciones', en: 'Research<br>& publications' },
+        pub_intro: { es: '+15 publicaciones científicas &middot; Artículos en <a href="https://eltoque.com/author/abraham-calas" target="_blank" rel="noopener" style="color:var(--accent);">elTOQUE</a> &middot; <a href="https://doi.org/10.1080/00036846.2024.2416091" target="_blank" rel="noopener" style="color:var(--accent);">Applied Economics (2024)</a>', en: '+15 scientific publications &middot; Articles in <a href="https://eltoque.com/author/abraham-calas" target="_blank" rel="noopener" style="color:var(--accent);">elTOQUE</a> &middot; <a href="https://doi.org/10.1080/00036846.2024.2416091" target="_blank" rel="noopener" style="color:var(--accent);">Applied Economics (2024)</a>' },
+        pub_read: { es: 'Leer &rarr;', en: 'Read &rarr;' },
+        pub_all: { es: 'Ver todos &rarr;', en: 'View all &rarr;' },
+        pub_articles: { es: 'Artículos en elTOQUE', en: 'Articles in elTOQUE' },
+        pub_articles_meta: { es: 'Publicaciones en el medio digital', en: 'Publications in the digital media' },
+        // Contact
+        contact_title: { es: 'Hablemos', en: 'Let\'s talk' },
+        contact_sub: { es: 'Estoy abierto a nuevas oportunidades, colaboraciones y proyectos interesantes.', en: 'I\'m open to new opportunities, collaborations and interesting projects.' },
+      };
+
+      function detectLang() {
+        const saved = localStorage.getItem('lang');
+        if (saved) return saved;
+        const browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+        return browserLang.startsWith('es') ? 'es' : 'en';
+      }
+      let currentLang = detectLang();
+      const toggle = document.getElementById('langToggle');
+
+      function setLang(lang) {
+        currentLang = lang;
+        localStorage.setItem('lang', lang);
+        document.documentElement.lang = lang;
+
+        // Update toggle button
+        toggle.querySelectorAll('[data-lang]').forEach(el => {
+          el.classList.toggle('lang-active', el.dataset.lang === lang);
+        });
+
+        // Update all translated elements
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+          const key = el.dataset.i18n;
+          if (translations[key] && translations[key][lang]) {
+            el.innerHTML = translations[key][lang];
+          }
+        });
+      }
+
+      toggle.addEventListener('click', () => {
+        setLang(currentLang === 'es' ? 'en' : 'es');
+      });
+
+      // Apply saved language on load
+      // Apply detected/saved language on load
+      setLang(currentLang);
     })();
   </script>
 </body>
