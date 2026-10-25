@@ -75,8 +75,13 @@
       {
         "@type": "EducationalOrganization",
         "name": "ESDEN Business School"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "ACE English Malta"
       }
     ],
+    "knowsLanguage": ["es", "en"],
     "knowsAbout": ["Software Architecture", "Artificial Intelligence", "NLP", "Machine Learning", "Full Stack Development", "Team Leadership", "Product Management"],
     "nationality": "Cuban",
     "address": {
@@ -451,6 +456,13 @@
       transition: all 0.4s ease;
     }
     .project-card:hover .project-logo { filter: grayscale(0) brightness(1) contrast(1); opacity: 1; }
+    .project-logo.icon { height: 40px; width: 40px; border-radius: 10px; object-fit: cover; }
+    .project-badge {
+      position: absolute; top: 1.2rem; right: 1.2rem; z-index: 1;
+      font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.25rem 0.6rem; border-radius: 999px;
+      color: var(--text-muted); border: 1px solid var(--border); background: rgba(255,255,255,0.03);
+    }
     .project-name { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; position: relative; z-index: 1; letter-spacing: -0.01em; }
     .project-desc { font-size: 0.85rem; color: var(--text-dim); line-height: 1.7; position: relative; z-index: 1; margin-bottom: 1rem; }
     .project-link {
@@ -511,7 +523,7 @@
     .award-content a:hover { color: var(--accent3); }
 
     /* ========== EDUCATION ========== */
-    .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .edu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
     .edu-card {
       padding: 2rem; border-radius: 20px;
       background: var(--bg-glass); border: 1px solid var(--border);
@@ -931,6 +943,35 @@
         <h2 class="section-title" data-i18n="proj_title">Proyectos<br>destacados</h2>
       </div>
       <div class="projects-grid">
+        <a href="https://samiapp.net/" target="_blank" rel="noopener" class="project-card">
+          <div class="glow"></div>
+          <img src="img/sami.png" alt="Sami" class="project-logo icon">
+          <div class="project-name">Sami</div>
+          <p class="project-desc" data-i18n="proj_sami">Asistente con IA de elTOQUE. Pronostica la tasa del dólar en Cuba y avisa al instante cuando cambia. Noticias, normas legales, clima y más, en app y chat.</p>
+          <span class="project-link"><span data-i18n="proj_visit">Visitar</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
+        </a>
+        <a href="https://eldoctor.chat/" target="_blank" rel="noopener" class="project-card">
+          <div class="glow"></div>
+          <img src="img/eldoctor.png" alt="eldoctor.chat" class="project-logo icon">
+          <div class="project-name">eldoctor.chat</div>
+          <p class="project-desc" data-i18n="proj_eldoctor">Recepcionista virtual con IA para consultorios médicos. Agenda, reagenda y cancela citas por WhatsApp, con calendarios independientes por doctor, 24/7.</p>
+          <span class="project-link"><span data-i18n="proj_visit">Visitar</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
+        </a>
+        <a href="https://cinerank.app/" target="_blank" rel="noopener" class="project-card">
+          <div class="glow"></div>
+          <img src="img/cinerank.png" alt="CineRank" class="project-logo icon">
+          <div class="project-name">CineRank</div>
+          <p class="project-desc" data-i18n="proj_cinerank">Comparador de películas: notas de IMDb, Rotten Tomatoes, FilmAffinity y Metacritic con una media agregada y comparación lado a lado para decidir qué ver.</p>
+          <span class="project-link"><span data-i18n="proj_visit">Visitar</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
+        </a>
+        <a href="https://www.youtube.com/@chatsdramas" target="_blank" rel="noopener" class="project-card">
+          <div class="glow"></div>
+          <span class="project-badge" data-i18n="proj_closed">Cerrado</span>
+          <img src="img/chatdramas.jpg" alt="Chat Dramas" class="project-logo icon">
+          <div class="project-name">Chat Dramas</div>
+          <p class="project-desc" data-i18n="proj_chatdramas">Canal de YouTube 100% automatizado con IA: guion, voces, vídeo y publicación sin intervención humana. Cinco historias nuevas al día. Experimento ya cerrado.</p>
+          <span class="project-link"><span data-i18n="proj_watch">Ver canal</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span>
+        </a>
         <a href="https://eltoque.com" target="_blank" rel="noopener" class="project-card">
           <div class="glow"></div>
           <img src="img/eltoque.png" alt="elTOQUE" class="project-logo">
@@ -1100,6 +1141,27 @@
       </div>
       <div class="gallery-grid">
         <div class="gallery-item span-2">
+          <img src="img/malta.jpg" alt="Abraham en lancha en la Blue Lagoon de Comino, Malta" loading="lazy">
+          <div class="gallery-caption">
+            <h4>Comino, Malta</h4>
+            <p data-i18n="gal_malta">Blue Lagoon &mdash; un mes estudiando inglés en la isla</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/sansebastian.jpg" alt="Abraham en la playa de la Concha, San Sebastián, España" loading="lazy">
+          <div class="gallery-caption">
+            <h4>San Sebastián, España</h4>
+            <p data-i18n="gal_sansebastian">Playa de la Concha al atardecer</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/alicante.jpg" alt="Abraham en el Castillo de Santa Bárbara, Alicante, España" loading="lazy">
+          <div class="gallery-caption">
+            <h4>Alicante, España</h4>
+            <p data-i18n="gal_alicante">Castillo de Santa Bárbara sobre el Mediterráneo</p>
+          </div>
+        </div>
+        <div class="gallery-item span-2">
           <img src="img/toledo.jpg" alt="Abraham en tirolina en Toledo, España" loading="lazy">
           <div class="gallery-caption">
             <h4>Toledo, España</h4>
@@ -1238,6 +1300,11 @@
         <h2 class="section-title" data-i18n="edu_title">Educación<br>académica</h2>
       </div>
       <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-degree" data-i18n="edu_degree3">Inglés B2 &middot; ACE Business 20</div>
+          <div class="edu-school">ACE English Malta</div>
+          <div class="edu-meta"><span>St. Julian's, Malta</span><span>2026 &middot; <span data-i18n="edu_attendance">100% asistencia</span></span></div>
+        </div>
         <div class="edu-card">
           <div class="edu-degree">MBA - Business Administration</div>
           <div class="edu-school">ESDEN Business School</div>
@@ -1686,6 +1753,12 @@
         proj_chatbots: { es: 'TaxiBot, Viatil, DeFactoBot, y asistentes virtuales. Soluciones conversacionales con IA para distintas industrias.', en: 'TaxiBot, Viatil, DeFactoBot, and virtual assistants. Conversational AI solutions for different industries.' },
         proj_visit: { es: 'Visitar', en: 'Visit' },
         proj_explore: { es: 'Explorar', en: 'Explore' },
+        proj_watch: { es: 'Ver canal', en: 'Watch channel' },
+        proj_closed: { es: 'Cerrado', en: 'Closed' },
+        proj_sami: { es: 'Asistente con IA de elTOQUE. Pronostica la tasa del dólar en Cuba y avisa al instante cuando cambia. Noticias, normas legales, clima y más, en app y chat.', en: 'elTOQUE\'s AI assistant. Forecasts the dollar rate in Cuba and alerts you the moment it changes. News, legal rules, weather and more, as an app and a chat.' },
+        proj_eldoctor: { es: 'Recepcionista virtual con IA para consultorios médicos. Agenda, reagenda y cancela citas por WhatsApp, con calendarios independientes por doctor, 24/7.', en: 'AI virtual receptionist for medical practices. Books, reschedules and cancels appointments over WhatsApp, with independent calendars per doctor, 24/7.' },
+        proj_cinerank: { es: 'Comparador de películas: notas de IMDb, Rotten Tomatoes, FilmAffinity y Metacritic con una media agregada y comparación lado a lado para decidir qué ver.', en: 'Movie comparator: IMDb, Rotten Tomatoes, FilmAffinity and Metacritic scores with an aggregated average and side-by-side comparison to decide what to watch.' },
+        proj_chatdramas: { es: 'Canal de YouTube 100% automatizado con IA: guion, voces, vídeo y publicación sin intervención humana. Cinco historias nuevas al día. Experimento ya cerrado.', en: 'Fully AI-automated YouTube channel: script, voices, video and publishing with no human in the loop. Five new stories a day. Experiment now closed.' },
         // Skills
         skills_title: { es: 'Stack<br>tecnológico', en: 'Tech<br>stack' },
         skill_redes: { es: 'Redes', en: 'Networking' },
@@ -1698,6 +1771,9 @@
         gal_santiago: { es: 'Explorando Sudamérica', en: 'Exploring South America' },
         gal_stockholm: { es: 'Verano nórdico', en: 'Nordic summer' },
         gal_avila: { es: 'Puertas medievales', en: 'Medieval gates' },
+        gal_malta: { es: 'Blue Lagoon &mdash; un mes estudiando inglés en la isla', en: 'Blue Lagoon &mdash; a month studying English on the island' },
+        gal_sansebastian: { es: 'Playa de la Concha al atardecer', en: 'La Concha beach at sunset' },
+        gal_alicante: { es: 'Castillo de Santa Bárbara sobre el Mediterráneo', en: 'Santa Bárbara Castle over the Mediterranean' },
         // Beyond
         beyond_label: { es: '06 &mdash; Más allá del código', en: '06 &mdash; Beyond code' },
         beyond_title: { es: 'No todo es<br>software', en: 'Not everything<br>is software' },
@@ -1725,6 +1801,8 @@
         edu_title: { es: 'Educación<br>académica', en: 'Academic<br>education' },
         edu_degree2: { es: 'Ing. Ciencias Informáticas', en: 'B.Sc. Computer Science Engineering' },
         edu_gold: { es: 'Título de Oro', en: 'Gold Title (Summa Cum Laude)' },
+        edu_degree3: { es: 'Inglés B2 &middot; ACE Business 20', en: 'English B2 (Upper-Intermediate) &middot; ACE Business 20' },
+        edu_attendance: { es: '100% asistencia', en: '100% attendance' },
         // Publications
         pub_label: { es: '08 &mdash; Publicaciones', en: '08 &mdash; Publications' },
         pub_title: { es: 'Investigación<br>y publicaciones', en: 'Research<br>& publications' },
